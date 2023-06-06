@@ -23,7 +23,7 @@ movieDesc.innerHTML = `
         <p class="text-white">${movieData.overview}</p>
         <p class="text-white">${movieData.original_language}</p>
         <p class="text-white">${movieData.vote_average}</p>
-        <h1 class="text-white "><a href="#master" class="text-decoration-none">Session</a></h1>
+        <h1 class="text-white "><a href="#session" class="text-decoration-none">Session</a></h1>
       </div>
     </div>
 `;
@@ -165,7 +165,6 @@ seats.forEach((seat) => {
 
     const number = arr;
     localStorage.setItem("seat", number);
-    console.log(arr.length);
   });
 
   seatDrawing_two.addEventListener("click", (e) => {
@@ -181,8 +180,6 @@ seats.forEach((seat) => {
     const number = arr;
 
     localStorage.setItem("seat", number);
-    console.log(arr);
-    console.log(arr.length);
   });
 
   seatDrawing_three.addEventListener("click", (e) => {
@@ -198,7 +195,6 @@ seats.forEach((seat) => {
 
     const number = arr;
     localStorage.setItem("seat", number);
-    console.log(arr.length);
   });
 });
 console.log(arr.length);

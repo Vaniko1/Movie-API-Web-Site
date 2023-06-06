@@ -23,7 +23,8 @@ movieDesc.innerHTML = `
         }</h3> 
         <h4 class="text-white">Happy Watching!</h4>
         <div class="text-white">Your Seat number: <span id="booked_place"></span></div>
-      </div>
+        <div class="text-white">Total price: <span id="total_price"></span></div>
+        </div>
     </div>
 `;
 main.appendChild(movieDesc);
@@ -77,8 +78,11 @@ function getClassByVote(vote) {
 const bookedPlace = localStorage.getItem("seat");
 
 document.getElementById("booked_place").textContent = bookedPlace;
+let ticketQuantity = bookedPlace.split(",").length;
+console.log(ticketQuantity);
+document.getElementById("total_price").textContent = ticketQuantity * 10;
 
 back.addEventListener("click", () => {
-  window.location.href = "movie.html";
+  window.location.href = "index.html";
   document.getElementById("booked_place").textContent = "";
 });
