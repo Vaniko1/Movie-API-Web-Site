@@ -153,7 +153,7 @@ seats.forEach((seat) => {
   }
 
   seatDrawing_one.addEventListener("click", (e) => {
-    if (!e.target.classList.contains("yellow")) {
+    if (e.target.classList.contains("green_seat")) {
       e.target.classList.toggle("red");
     }
 
@@ -168,7 +168,7 @@ seats.forEach((seat) => {
   });
 
   seatDrawing_two.addEventListener("click", (e) => {
-    if (!e.target.classList.contains("yellow")) {
+    if (e.target.classList.contains("green_seat")) {
       e.target.classList.toggle("red");
     }
 
@@ -183,7 +183,7 @@ seats.forEach((seat) => {
   });
 
   seatDrawing_three.addEventListener("click", (e) => {
-    if (!e.target.classList.contains("yellow")) {
+    if (e.target.classList.contains("green_seat")) {
       e.target.classList.toggle("red");
     }
 
